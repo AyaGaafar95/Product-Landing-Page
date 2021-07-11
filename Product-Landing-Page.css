@@ -1,0 +1,248 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+body {
+  background-color: #eeeeee;
+  font-family: "Lato", sans-serif;
+  width: 100%;
+}
+.container {
+  width: 50%;
+  height: 100%;
+  margin: auto;
+  text-align: center;
+  padding-top: 90px;
+}
+h1 {
+  font-size: 1.5em;
+  margin-bottom: 10px;
+}
+.input {
+  width: 18em;
+
+  height: 22px;
+  padding: 2px;
+  padding-left: 6px;
+  margin: 8px;
+  margin-bottom: 20px;
+}
+
+.bt {
+  background-color: #f1c40f;
+  display: block;
+  cursor: pointer;
+  font-size: 18px;
+  font-weight: bold;
+  border-radius: 2px;
+  color: black;
+  height: 30px;
+  width: 9em;
+  text-align: right;
+  padding-right: 8px;
+  margin: auto;
+  margin-bottom: 120px;
+  font-family: "Lato", sans-serif;
+  border: none;
+  text-transform: uppercase;
+}
+.bt:hover,
+.bt2:hover {
+  background-color: orange;
+  transition: 1s;
+}
+/* ///////////////////////////////////////////// */
+.i-text {
+  width: 90%;
+
+  margin: auto;
+  margin-top: 30px;
+  margin-bottom: 80px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 7%;
+}
+
+.text {
+  width: 70%;
+  height: 100%;
+  text-align: left;
+}
+
+.i {
+  width: 10%;
+  text-align: center;
+}
+h2 {
+  margin-bottom: 0px;
+}
+i {
+  display: inline-block;
+  color: #ff8c00;
+  font-size: 3em;
+}
+
+p {
+  font-size: medium;
+  font-weight: lighter;
+  line-height: 20px;
+}
+/* //////////////////////////////////////////////////// */
+iframe {
+  display: block;
+  max-width: 560px;
+  width: 100%;
+  height: 300px;
+  margin: 70px auto;
+  border-width: 0;
+}
+/* ///////////////////////////////////////////////////////// */
+.card {
+  width: 80%;
+  /* height: 320px; */
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+.one,
+.two,
+.three {
+  width: 32%;
+  height: 100%;
+  border: 1px solid black;
+}
+.one:hover,
+.two:hover,
+.three:hover {
+  transform: scale(1.05);
+  transition-duration: 0.5s;
+}
+.title {
+  height: 60px;
+  width: 100%;
+  margin: 0 auto;
+  font-weight: 700px;
+  text-align: center;
+  line-height: 60px;
+  color: black;
+  text-transform: uppercase;
+  background-color: #dddddd;
+}
+.h2 {
+  text-align: center;
+  font-size: xx-large;
+  font-weight: 200px;
+  margin-top: 15px;
+}
+
+li {
+  list-style-type: none;
+  text-align: center;
+  line-height: 30px;
+}
+
+.bt2 {
+  background-color: #f1c40f;
+  display: block;
+  cursor: pointer;
+  font-size: 15px;
+  border-radius: 2px;
+  color: black;
+  height: 40px;
+  width: 7em;
+  text-align: center;
+  margin: auto;
+  margin-top: 30px;
+  margin-bottom: 20px;
+  font-family: "Lato", sans-serif;
+  border: none;
+  text-transform: uppercase;
+}
+/* ///////////////////////////////////////////////////////// */
+
+header {
+  width: 90%;
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+  padding: 15px 5%;
+  position: fixed;
+  z-index: 2;
+  background-color: #eeeeee;
+}
+.ul-header {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  gap: 100px;
+  margin: 0px;
+}
+#header-img {
+  width: 300px;
+  margin-top: 15px;
+  /* margin: 30px; */
+}
+.ul-header > li:hover {
+  background-color: #f1c40f;
+}
+
+/* /////////////////////////////////////////////// */
+
+.footer {
+  width: 80%;
+  height: 80px;
+  background-color: #dddddd;
+  margin: auto;
+  margin-top: 20px;
+}
+.footer > ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  gap: 30px;
+  margin: 20px;
+  margin-bottom: 0;
+  padding: 20px;
+  padding-bottom: 0px;
+}
+.footer > p {
+  text-align: right;
+  margin: 30px;
+  margin-top: 0px;
+}
+
+@media (max-width: 767px) {
+  .ul-header {
+    display: block;
+  }
+  header {
+    flex-direction: column;
+  }
+  .footer {
+    width: 100%;
+  }
+  .one,
+  .two,
+  .three {
+    width: 80%;
+  }
+  .container {
+    padding-top: 180px;
+    width: 100%;
+  }
+  .card {
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+  }
+  #header-img {
+    margin-top: 7px;
+  }
+  .text {
+    width: 100%;
+    text-align: center;
+  }
+}
